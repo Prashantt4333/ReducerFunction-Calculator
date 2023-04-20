@@ -9,10 +9,10 @@ let reducerFunction = (oldState,action) =>{
   console.log("action.type=====>",action.type)
   switch(action.type){
     case 'ADDITION' :
-      return oldState+5;
+      return oldState+action.payload;
       break;
     case 'SUBSTRACTION' :
-      return oldState-5;
+      return oldState-action.payload;
       break;
    
     default:
